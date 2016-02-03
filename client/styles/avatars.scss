@@ -1,0 +1,39 @@
+/**
+  ----------------------------
+  AVATAR - user avatar colors
+  ----------------------------
+**/
+
+
+.avatar {
+  text-align: right;
+  margin: 8px;
+  color: white;
+  font-weight: 900;
+  width: 45px;
+  height: 45px;
+  border-radius: 3px;
+  border-width: 2px;
+  cursor: pointer;
+  font-size: 2.7em;
+  // default background
+  background: #000;
+}
+.av-0{
+  background: #000;
+}
+.av-1{
+  background: #F00;
+}
+.av-2{
+  background: #00F;
+}
+.av-3{
+  background: #0f0;
+}
+.av-4{
+  background: #666;
+}
+.av-5{
+  background: orange;
+}

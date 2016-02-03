@@ -1,0 +1,40 @@
+/**
+  -----------------------------------
+  USER REGISTRATION - account styles
+  -----------------------------------
+**/
+
+.new-user{
+  // account registration/login form
+  margin-bottom: 1em;
+  background: #003044;
+  padding: 1em 0.55em;
+  .username{
+    // logged in user name on top left
+    font-size: 1.3em;
+    .options{
+      // user configuration menu
+      vertical-align: middle;
+      transition: all .5s;
+      cursor: pointer;
+      padding-top: 2px;
+      padding-right: 8px;
+      font-size: 0.9em;
+      &:hover{
+        color: #00A896;
+      }
+    }
+  }
+  // if the form has any error
+  .account-errors{
+    color: #B2BDC1;
+    text-align: center;
+    padding: 0.5em;
+  }
+  // sign up buttons
+  .button{
+    margin-top: 3px;
+    margin-left: 3px;
+  }
+}
+

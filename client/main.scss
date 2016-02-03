@@ -1,0 +1,106 @@
+// Using Foundation framework.
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700);
+@import '{zurb:foundation-sites}/scss/foundation';
+@include foundation-everything;
+
+/**
+  --------------
+  DEFAULT STYLES
+  --------------
+**/
+
+html, body, #chat, .full, .sidebar {
+  font-family: 'Roboto', sans-serif;
+  height: 100%;
+}
+
+
+/** Scrollbar Hack **/
+
+::-webkit-scrollbar-track
+{
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  background-color: #5DACCE;
+}
+
+::-webkit-scrollbar
+{
+  width: 5px;
+  background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb
+{
+  background-color: #003044;
+}
+
+
+.sidebar, .chatlog {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+
+/**
+  -----------------------------------
+  SIDEBAR - left side navigation menu
+  -----------------------------------
+**/
+
+.sidebar {
+  font-size: 0.9em;
+  color: #ffffff;
+  background-color: #05668D;
+  border-right: 1px solid #012E40;
+  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: auto;
+  @include breakpoint(medium up){
+    position: fixed;
+  }
+  hr{
+    border-top: 1px solid #086C94;
+    border-bottom: 1px solid #145671;
+  }
+  h4.logo {
+    padding: 0.5em;
+    background: #003044;
+    border-bottom: 1px solid #517D8E;
+    margin-bottom: -1px;
+  }
+  h6 {
+    font-size: 0.9em;
+    padding-left: 3px;
+    font-weight: 700;
+  }
+  ul {
+    margin: 0 1em 0.5em 0;
+    li {
+      margin-bottom: 0.3em;
+      list-style-type: none;
+      padding: 0.2em 0.5em;
+      border-radius: 0 3px 3px 0;
+      a {
+        color: white;
+      }
+    }
+  }
+  .active {
+    color: white;
+    font-weight: 500;
+    background: #00A896;
+  }
+  .user-list{
+    // a little margin on bottom so it doesn't overlap the fixed login menu
+    margin-bottom: 70px;
+  }
+}
+
+
+
+
+
+
+
+
